@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - TheErrorExe Guides</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            position: fixed;
+            width: 100%;
+            background: transparent;
+            transition: background 0.3s;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header.scrolled {
+            background: #27ae60;
+        }
+        header a {
+            color: #2c3e50;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .hero {
+            height: 100vh;
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            background: white;
+            color: #2ecc71;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .hero button:hover {
+            background: #2ecc71;
+            color: white;
+            transform: scale(1.05);
+        }
+        .section {
+            padding: 100px 50px;
+        }
+        .about {
+            background: #a3e4d7;
+        }
+        .services .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .services .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        footer {
+            background: #27ae60;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>TheErrorExe Guides</div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="https://youtube.com/@theerrorexe?si=o79CvqbwtamGU3Gc">YouTube</a>
+            <a href="/guides">Guides</a>
+            <a href="/downloads">Downloads</a>
+        </nav>
+    </header>
+    <div class="hero">
+        <h1>404 - Nicht gefunden</h1>
+        <p>Diese Seite wurde auf diesem Server nicht gefunden.</p>
+        <a href="/">Home<a>
+            <p>War diese Seite ein Link? Kontaktiere theerrorpng@gmail.com bei Fehlerhaften Links.</p>
+        <p style="color: blue;">Details: Server: GitHub Pages. This Site: /404.html. Hosted on GitHub Pages.</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 TheErrorExe. All rights reserved.</p>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>
